@@ -1,0 +1,65 @@
+.box{
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 174, 0);
+    animation-name: pak-man;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 120px;
+    left: 400px;
+}
+@keyframes pak-man{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(60vw);
+    }
+    50%{
+        transform: translate(60vw, 43vh);
+    }
+    75%{
+        transform: translate(0vw, 43vh);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes changeBg {
+    0%{
+        transform: translate(0vw 0vh) rotate(0deg);
+    }
+    25%{
+        transform: translateX(56vw) rotate(0deg);
+    }
+    30%{
+        transform: translateX(56vw) rotate(90deg);
+    }
+    50%{
+        transform: translate(56vw, 43vh) rotate(90deg);
+    }
+    55%{
+        transform: translate(56vw, 43vh) rotate(180deg);
+    }
+    75%{
+        transform: translate(0vw, 43vh) rotate(180deg);
+    }
+    80%{
+        transform: translate(0vw,43vh) rotate(270deg);
+    }
+    90%{
+        transform: translate(0vw,0vh) rotate(270deg);
+    }
+    100%{
+        transform: translate(0vw,0px) rotate(360deg);
+    }
+}
+img{
+    animation-delay: .5s;
+    animation-name: changeBg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 300px;
+}
